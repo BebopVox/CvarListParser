@@ -1,0 +1,413 @@
+bot_mimic_spec_buttons                   : 1        : , "cheat", "cl"  : +attack, +jump etc are used for spectator control instead of being passed on to spectated bot
+cam_showangles                           : 0        : , "cheat", "cl"  : When in thirdperson, print viewangles/idealangles/cameraoffsets to the console.
+cl_bob                                   : 0.002    : , "cheat", "cl"  : 
+cl_bobcycle                              : 0.8      : , "cheat", "cl"  : 
+cl_bobup                                 : 0.5      : , "cheat", "cl"  : 
+cl_cinematiclight_b                      : 0.05     : , "cheat", "cl"  : 
+cl_cinematiclight_g                      : 0.3      : , "cheat", "cl"  : 
+cl_cinematiclight_r                      : 3.0      : , "cheat", "cl"  : 
+cl_cinematiclight_scale                  : 7.0      : , "cheat", "cl"  : 
+cl_cinematiclight_tonemap                : 0.4      : , "cheat", "cl"  : 
+cl_clock_correction                      : 1        : , "cheat"        : Enable/disable clock correction on the client.
+cl_clock_correction_adjustment_max_amount : 200      : , "cheat"        : Sets the maximum number of milliseconds per second it is allowed to correct the client clock. It will only correct this amount if the difference between the client and server clock is equal to or larger than cl_clock_correction_adjustment_max_offset.
+cl_clock_correction_adjustment_max_offset : 90       : , "cheat"        : As the clock offset goes from cl_clock_correction_adjustment_min_offset to this value (in milliseconds), it moves towards applying cl_clock_correction_adjustment_max_amount of adjustment. That way, the response is small when the offset is small.
+cl_clock_correction_adjustment_min_offset : 10       : , "cheat"        : If the clock offset is less than this amount (in milliseconds), then no clock correction is applied.
+cl_clock_correction_force_server_tick    : 999      : , "cheat"        : Force clock correction to match the server tick + this offset (-999 disables it).
+cl_clock_showdebuginfo                   : 0        : , "cheat"        : Show debugging info about the clock drift. 
+cl_clockdrift_max_ms                     : 150      : , "cheat"        : Maximum number of milliseconds the clock is allowed to drift before the client snaps its clock to the server's.
+cl_clockdrift_max_ms_threadmode          : 0        : , "cheat"        : Maximum number of milliseconds the clock is allowed to drift before the client snaps its clock to the server's.
+cl_detail_multiplier                     : 1        : , "cheat", "cl"  : extra details to create
+cl_disable_ragdolls                      : 0        : , "cheat", "cl"  : 
+cl_drawhud                               : 1        : , "cheat", "cl"  : Enable the rendering of the hud
+cl_drawleaf                              : -1       : , "cheat", "cl"  : 
+cl_drawmaterial                          :          : , "cheat", "cl"  : Draw a particular material over the frame
+cl_drawshadowtexture                     : 0        : , "cheat", "cl"  : 
+cl_entityreport                          : 0        : , "cheat"        : For debugging, draw entity states to console
+cl_extrapolate                           : 1        : , "cheat", "cl"  : Enable/disable extrapolation if interpolation history runs out.
+cl_extrapolate_amount                    : 0.25     : , "cheat", "cl"  : Set how many seconds the client will extrapolate entities for.
+cl_fastdetailsprites                     : 1        : , "cheat", "cl"  : whether to use new detail sprite system
+cl_flushentitypacket                     : 0        : , "cheat"        : For debugging. Force the engine to flush an entity packet.
+cl_force_3rd_strike                      : 0        : , "cheat", "cl"  : 
+cl_glow_blur_scale                       : 3        : , "cheat", "cl"  : Controls the size of the halo shown around players and usable items
+cl_glow_brightness                       : 1        : , "cheat", "cl"  : Brightness of player halos
+cl_glow_force                            : 255      : , "cheat", "cl"  : Forces glows on
+cl_glow_noise                            : 1        : , "cheat", "cl"  : Is Survivor glow seen by infected based on noise?
+cl_ignorepackets                         : 0        : , "cheat"        : Force client to ignore packets (for debugging).
+cl_jiggle_bone_debug                     : 0        : , "cheat", "cl"  : Display physics-based 'jiggle bone' debugging information
+cl_jiggle_bone_debug_pitch_constraints   : 0        : , "cheat", "cl"  : Display physics-based 'jiggle bone' debugging information
+cl_jiggle_bone_debug_yaw_constraints     : 0        : , "cheat", "cl"  : Display physics-based 'jiggle bone' debugging information
+cl_jiggle_bone_invert                    : 0        : , "cheat", "cl"  : 
+cl_leafsystemvis                         : 0        : , "cheat", "cl"  : 
+cl_leveloverview                         : 0        : , "cheat", "cl"  : 
+cl_leveloverviewmarker                   : 0        : , "cheat", "cl"  : 
+cl_maxrenderable_dist                    : 3000     : , "cheat", "cl"  : Max distance from the camera at which things will be rendered
+cl_overdraw_test                         : 0        : , "cheat", "numeric", "cl" : 
+cl_particle_retire_cost                  : 0        : , "cheat", "cl"  : 
+cl_particles_show_bbox                   : 0        : , "cheat", "cl"  : 
+cl_pclass                                :          : , "cheat", "cl"  : Dump entity by prediction classname.
+cl_pdump                                 : -1       : , "cheat", "cl"  : Dump info about this entity to screen.
+cl_phys_timescale                        : 1.0      : , "cheat", "cl"  : Sets the scale of time for client-side physics (ragdolls)
+cl_pitchdown                             : 89       : , "cheat", "cl"  : 
+cl_pitchup                               : 89       : , "cheat", "cl"  : 
+cl_predict                               : 1.0      : , "cheat", "user", "cl" : Perform client side prediction.
+cl_predictionlist                        : 0        : , "cheat", "cl"  : Show which entities are predicting 
+cl_ragdoll_gravity                       : 386      : , "cheat", "cl"  : Sets the gravity client-side ragdolls
+cl_shadowtextureoverlaysize              : 256      : , "cheat", "cl"  : 
+cl_showanimstate                         : -1       : , "cheat", "cl"  : Show the (client) animation state for the specified entity (-1 for none).
+cl_showanimstate_activities              : 1        : , "cheat", "cl"  : Show activities in the (client) animation state display.
+cl_showanimstate_log                     : 0        : , "cheat", "cl", "launcher" : 1 to output cl_showanimstate to Msg(). 2 to store in AnimStateClient.log. 3 for both.
+cl_showevents                            : 0        : , "cheat"        : Print event firing info in the console
+cl_showposeparams                        : 1        : , "cheat", "cl"  : 
+cl_skipfastpath                          : 0        : , "cheat", "cl"  : Set to 1 to stop all models that go through the model fast path from rendering
+cl_skipslowpath                          : 0        : , "cheat"        : Set to 1 to skip any models that don't go through the model fast path
+cl_smoke_color_percent                   : 0.5      : , "cheat", "cl"  : 
+cl_smoke_fog_percent                     : 0        : , "cheat", "cl", "launcher" : 
+cl_sporeclipdistance                     : 512      : , "cheat", "cl"  : 
+cl_sun_decay_rate                        : 0.05     : , "cheat", "cl"  : 
+cl_upspeed                               : 320      : , "cheat", "cl"  : 
+cl_use_update_interval                   : .2       : , "cheat", "cl"  : Time between use target updates
+cl_viewtarget_debug                      : 0        : , "cheat", "cl"  : 
+cl_viewtarget_offset                     : 0        : , "cheat", "cl"  : 
+cl_viewtarget_player                     : 0        : , "cheat", "cl"  : Lock 3rd person spec looking into target's eyes
+cl_winddir                               : 0        : , "cheat", "cl"  : Weather effects wind direction angle
+cl_windspeed                             : 0        : , "cheat", "cl"  : Weather effects wind speed scalar
+cl_witch_light_brightness                : 5        : , "cheat", "cl"  : 
+cl_witch_light_color_b                   : 0        : , "cheat", "cl"  : 
+cl_witch_light_color_g                   : 0        : , "cheat", "cl"  : 
+cl_witch_light_color_r                   : 255      : , "cheat", "cl"  : 
+cl_witch_light_cone                      : 45       : , "cheat", "cl"  : 
+cl_witch_light_debug                     : 0        : , "cheat", "cl"  : 
+cl_witch_light_enable                    : 1        : , "cheat", "cl"  : 
+cl_witch_light_offset_x                  : 10       : , "cheat", "cl"  : 
+cl_witch_light_offset_y                  : 0        : , "cheat", "cl"  : 
+cl_witch_light_offset_z                  : 35       : , "cheat", "cl"  : 
+cl_witch_light_offset_z_max              : 30       : , "cheat", "cl"  : 
+cl_witch_light_radius                    : 60       : , "cheat", "cl"  : 
+cl_wpn_sway_scale                        : 1.0      : , "cheat", "cl"  : 
+debug_zombie_panel                       : 0        : , "cheat", "cl"  : -1 = Too Far 1 = Tank 2 = Someone else tank
+default_fov                              : 90       : , "cheat", "cl"  : 
+demo_polish_auto_polish                  : 1        : , "cheat", "cl"  : When enabled will cause a recorded demo to be polished automatically on end record.
+demo_polish_bone_test_index              : -1       : , "cheat", "cl"  : Test bone index.
+demo_recordcommands                      : 1        : , "cheat"        : Record commands typed at console into .dem files.
+director_show_intensity                  : 0        : , "cheat", "cl"  : 
+disable_static_prop_loading              : 0        : , "cheat"        : If non-zero when a map loads, static props won't be loaded
+display_game_events                      : 0        : , "cheat"        : 
+dsp_dist_max                             : 1440.0   : , "cheat", "demo" : 
+dsp_dist_min                             : 0.0      : , "cheat", "demo" : 
+dsp_off                                  : 0        : , "cheat"        : 
+enable_skeleton_draw                     : 0        : , "cheat", "cl"  : Render skeletons in wireframe // crush
+fish_debug                               : 0        : , "cheat", "cl"  : Show debug info for fish
+fog_color                                : -1 -1 -1 : , "cheat", "cl"  : 
+fog_colorskybox                          : -1 -1 -1 : , "cheat", "cl"  : 
+fog_enable                               : 1        : , "cheat", "cl"  : 
+fog_enable_water_fog                     : 1        : , "cheat"        : 
+fog_enableskybox                         : 1        : , "cheat", "cl"  : 
+fog_end                                  : -1       : , "cheat", "cl"  : 
+fog_endskybox                            : -1       : , "cheat", "cl"  : 
+fog_hdrcolorscale                        : -1       : , "cheat", "cl"  : 
+fog_hdrcolorscaleskybox                  : -1       : , "cheat", "cl"  : 
+fog_maxdensity                           : -1       : , "cheat", "cl"  : 
+fog_maxdensityskybox                     : -1       : , "cheat", "cl"  : 
+fog_override                             : 0        : , "cheat", "cl"  : Overrides the map's fog settings (-1 populates fog_ vars with map's values)
+fog_start                                : -1       : , "cheat", "cl"  : 
+fog_startskybox                          : -1       : , "cheat", "cl"  : 
+g_debug_ragdoll_visualize                : 0        : , "cheat", "cl"  : 
+gameinstructor_verbose                   : 0        : , "cheat", "cl"  : Set to 1 for standard debugging or 2 (in combo with gameinstructor_verbose_lesson) to show update actions.
+gameinstructor_verbose_lesson            :          : , "cheat", "cl"  : Display more verbose information for lessons have this name.
+gl_clear_randomcolor                     : 0        : , "cheat", "cl"  : Clear the back buffer to random colors every frame. Helps spot open seams in geometry.
+hidehud                                  : 0        : , "cheat", "cl"  : bitmask: 1=weapon selection, 2=flashlight, 4=all, 8=health, 16=player dead, 32=needssuit, 64=misc, 128=chat, 256=crosshair, 512=vehicle crosshair, 1024=in vehicle
+host_sleep                               : 0        : , "cheat"        : Force the host to sleep a certain number of milliseconds each frame.
+hud_targetid_rangefinder                 :          : , "cheat", "cl"  : shows range for different masks
+in_forceuser                             : 0        : , "cheat"        : Force user input to this split screen player.
+inferno_dlight_spacing                   : 200      : , "cheat", "cl"  : Inferno dlights are at least this far apart
+leaderboard_duplicate_entries            : 1        : , "cheat", "cl"  : 
+lightcache_maxmiss                       : 2        : , "cheat"        : 
+lower_body_debug                         : 0        : , "cheat", "cl"  : 
+mat_accelerate_adjust_exposure_down      : 3.0      : , "cheat", "cl"  : 
+mat_bloomamount_rate                     : 0.05f    : , "cheat", "cl"  : 
+mat_bumpbasis                            : 0        : , "cheat"        : 
+mat_camerarendertargetoverlaysize        : 128      : , "cheat", "cl"  : 
+mat_colcorrection_forceentitiesclientside : 0        : , "cheat", "cl"  : Forces color correction entities to be updated on the client
+mat_debug_bloom                          : 0        : , "cheat", "cl"  : 
+mat_debugalttab                          : 0        : , "cheat"        : 
+mat_depthbias_decal                      : -262144  : , "cheat", "launcher" : 
+mat_depthbias_normal                     : 0.0f     : , "cheat", "launcher" : 
+mat_depthbias_shadowmap                  : 0.0005   : , "cheat", "launcher" : 
+mat_drawflat                             : 0        : , "cheat"        : 
+mat_drawwater                            : 1        : , "cheat", "cl"  : 
+mat_dynamic_tonemapping                  : 1        : , "cheat"        : 
+mat_dynamiclightmaps                     : 0        : , "cheat"        : 
+mat_exposure_center_region_x             : 0.9      : , "cheat", "cl"  : 
+mat_exposure_center_region_y             : 0.85     : , "cheat", "cl"  : 
+mat_fastclip                             : 0        : , "cheat"        : 
+mat_fastnobump                           : 0        : , "cheat"        : 
+mat_fillrate                             : 0        : , "cheat"        : 
+mat_force_bloom                          : 0        : , "cheat", "cl"  : 
+mat_force_tonemap_scale                  : 0.0      : , "cheat"        : 
+mat_forcedynamic                         : 0        : , "cheat"        : 
+mat_forcemanagedtextureintohardware      : 0        : , "cheat", "launcher" : 
+mat_frame_sync_enable                    : 1        : , "cheat"        : 
+mat_frame_sync_force_texture             : 0        : , "cheat"        : Force frame syncing to lock a managed texture.
+mat_fullbright                           : 0        : , "cheat"        : 
+mat_hdr_uncapexposure                    : 0        : , "cheat", "cl"  : 
+mat_hsv                                  : 0        : , "cheat", "cl"  : 
+mat_leafvis                              : 0        : , "cheat"        : Draw wireframe of current leaf
+mat_loadtextures                         : 1        : , "cheat"        : 
+mat_lpreview_mode                        : -1       : , "cheat", "cl"  : 
+mat_luxels                               : 0        : , "cheat"        : 
+mat_measurefillrate                      : 0        : , "cheat"        : 
+mat_morphstats                           : 0        : , "cheat"        : 
+mat_norendering                          : 0        : , "cheat"        : 
+mat_normalmaps                           : 0        : , "cheat"        : 
+mat_normals                              : 0        : , "cheat"        : 
+mat_postprocess_enable                   : 1        : , "cheat", "cl"  : 
+mat_proxy                                : 0        : , "cheat"        : 
+mat_remoteshadercompile                  : 0        : , "cheat"        : 
+mat_reversedepth                         : 0        : , "cheat"        : 
+mat_show_texture_memory_usage            : 0        : , "cheat", "numeric" : Display the texture memory usage on the HUD.
+mat_showcamerarendertarget               : 0        : , "cheat", "cl"  : 
+mat_showframebuffertexture               : 0        : , "cheat", "cl"  : 
+mat_showlowresimage                      : 0        : , "cheat"        : 
+mat_showwatertextures                    : 0        : , "cheat", "cl"  : 
+mat_slopescaledepthbias_decal            : -0.5     : , "cheat", "launcher" : 
+mat_slopescaledepthbias_normal           : 0.0f     : , "cheat", "launcher" : 
+mat_slopescaledepthbias_shadowmap        : 4        : , "cheat", "launcher" : 
+mat_softwareskin                         : 0        : , "cheat"        : 
+mat_stub                                 : 0        : , "cheat", "cl"  : 
+mat_supportflashlight                    : 1        : , "cheat", "launcher" : 0 - do not support flashlight (don't load flashlight shader combos), 1 - flashlight is supported
+mat_surfaceid                            : 0        : , "cheat"        : 
+mat_surfacemat                           : 0        : , "cheat"        : 
+mat_tonemap_algorithm                    : 1        : , "cheat", "cl"  : 0 = Original Algorithm 1 = New Algorithm
+mat_tonemap_min_avglum                   : 3.0      : , "cheat", "cl"  : 
+mat_tonemap_percent_bright_pixels        : 1.0      : , "cheat", "cl"  : 
+mat_tonemap_percent_target               : 45       : , "cheat", "cl"  : 
+mat_viewportscale                        : 1.0      : , "cheat", "cl"  : Scale down the main viewport (to reduce GPU impact on CPU profiling)
+mat_wireframe                            : 0        : , "cheat"        : 
+mat_yuv                                  : 0        : , "cheat", "cl"  : 
+mem_incremental_compact_rate             : .5       : , "cheat"        : Rate at which to attempt internal heap compation
+music_master_debug                       : 0        : , "cheat", "cl"  : 
+music_master_tag_threshold               : .01      : , "cheat", "cl"  : 
+net_blockmsg                             : none     : , "cheat"        : Discards incoming message: <0|1|name>
+net_droppackets                          : 0        : , "cheat"        : Drops next n packets on client
+net_fakejitter                           : 0        : , "cheat"        : Jitter fakelag packet time
+net_fakelag                              : 0        : , "cheat"        : Lag all incoming network data (including loopback) by this many milliseconds.
+net_fakeloss                             : 0        : , "cheat"        : Simulate packet loss as a percentage (negative means drop 1/n packets)
+net_showreliablesounds                   : 0        : , "cheat"        : 
+net_showusermessages                     : 0        : , "cheat", "cl"  : 
+next                                     : 0        : , "cheat"        : Set to 1 to advance to next frame ( when singlestep == 1 )
+panel_test_title_safe                    : 0        : , "cheat"        : Test vgui panel positioning with title safe indentation
+particle_simulateoverflow                : 0        : , "cheat", "cl"  : Used for stress-testing particle systems. Randomly denies creation of particles.
+phys_enable_PIX_counters                 : 1        : , "cheat", "launcher" : enable PIX counters
+pwatchent                                : -1       : , "cheat", "cl"  : Entity to watch for prediction system changes.
+pwatchvar                                :          : , "cheat", "cl"  : Entity variable to watch in prediction system for changes.
+r_ambientfraction                        : 0.2      : , "cheat"        : Fraction of direct lighting used to boost lighting when model requests
+r_ambientlightingonly                    : 0        : , "cheat"        : Set this to 1 to light models with only ambient lighting (and no static lighting).
+r_avglight                               : 1        : , "cheat"        : 
+r_avglightmap                            : 0        : , "cheat"        : 
+r_ClipAreaPortals                        : 1        : , "cheat"        : 
+r_colorstaticprops                       : 0        : , "cheat"        : 
+r_debugcheapwater                        : 0        : , "cheat", "cl"  : 
+r_debugrandomstaticlighting              : 0        : , "cheat"        : Set to 1 to randomize static lighting for debugging.  Must restart for change to take affect.
+r_depthoverlay                           : 0        : , "cheat", "cl"  : Replaces opaque objects with their grayscaled depth values. r_showz_power scales the output.
+r_DispBuildable                          : 0        : , "cheat"        : 
+r_DispWalkable                           : 0        : , "cheat"        : 
+r_DrawBeams                              : 1        : , "cheat"        : 0=Off, 1=Normal, 2=Wireframe
+r_drawbrushmodels                        : 1        : , "cheat"        : Render brush models. 0=Off, 1=Normal, 2=Wireframe
+r_drawclipbrushes                        : 0        : , "cheat"        : Draw clip brushes (red=NPC+player, pink=player, purple=NPC)
+r_drawdecals                             : 1        : , "cheat"        : Render decals.
+r_DrawDisp                               : 1        : , "cheat"        : Toggles rendering of displacment maps
+r_drawentities                           : 1        : , "cheat"        : 
+r_drawfuncdetail                         : 1        : , "cheat"        : Render func_detail
+r_drawleaf                               : -1       : , "cheat"        : Draw the specified leaf.
+r_drawlightcache                         : 0        : , "cheat"        : 0: off 1: draw light cache entries 2: draw rays 
+r_drawlightinfo                          : 0        : , "cheat"        : 
+r_drawlights                             : 0        : , "cheat"        : 
+r_DrawModelLightOrigin                   : 0        : , "cheat"        : 
+r_drawmodelstatsoverlay                  : 0        : , "cheat"        : 
+r_drawmodelstatsoverlaydistance          : 500      : , "cheat"        : 
+r_drawopaquerenderables                  : 1        : , "cheat", "cl"  : 
+r_drawopaqueworld                        : 1        : , "cheat", "cl"  : 
+r_drawothermodels                        : 1        : , "cheat", "cl"  : 0=Off, 1=Normal, 2=Wireframe
+r_drawparticles                          : 1        : , "cheat", "cl"  : Enable/disable particle rendering
+r_DrawPortals                            : 0        : , "cheat"        : 
+r_DrawRain                               : 1        : , "cheat", "cl"  : Enable/disable rain rendering.
+r_drawrenderboxes                        : 0        : , "cheat", "cl"  : 
+r_drawropes                              : 1        : , "cheat", "cl"  : 
+r_drawskybox                             : 1        : , "cheat"        : 
+r_drawsprites                            : 1        : , "cheat", "cl"  : 
+r_drawstaticprops                        : 1        : , "cheat"        : 0=Off, 1=Normal, 2=Wireframe
+r_drawtracers                            : 1        : , "cheat", "cl"  : 
+r_drawtranslucentrenderables             : 1        : , "cheat", "cl"  : 
+r_drawtranslucentworld                   : 1        : , "cheat"        : 
+r_drawvgui                               : 1        : , "cheat"        : Enable the rendering of vgui panels
+r_drawviewmodel                          : 1        : , "cheat", "cl"  : 
+r_drawworld                              : 1        : , "cheat"        : Render the world.
+r_dscale_basefov                         : 90       : , "cheat"        : 
+r_dscale_fardist                         : 2000     : , "cheat"        : 
+r_dscale_farscale                        : 4        : , "cheat"        : 
+r_dscale_neardist                        : 100      : , "cheat"        : 
+r_dscale_nearscale                       : 1        : , "cheat"        : 
+r_dynamiclighting                        : 1        : , "cheat"        : 
+r_entity                                 : -1       : , "cheat", "launcher" : 
+r_eyewaterepsilon                        : 7.0f     : , "cheat", "cl"  : 
+r_farz                                   : -1       : , "cheat", "cl"  : Override the far clipping plane. -1 means to use the value in env_fog_controller.
+r_flashlight_attach_to_viewmodel         : 1        : , "cheat", "cl"  : Attach the flashlight effect to the viewmodel
+r_flashlightambient                      : 0.0      : , "cheat", "cl"  : 
+r_flashlightbacktraceoffset              : 0.4      : , "cheat", "cl"  : 
+r_flashlightbrightness                   : 0.25     : , "cheat"        : 
+r_flashlightclip                         : 0        : , "cheat"        : 
+r_flashlightconstant                     : 0.0      : , "cheat", "cl"  : 
+r_flashlightdrawclip                     : 0        : , "cheat"        : 
+r_flashlightfar                          : 750.0    : , "cheat", "cl"  : 
+r_flashlightfov                          : 53.0     : , "cheat", "cl"  : 
+r_flashlightinfectedtexture              : effects/flashlight001_infected : , "cheat", "cl"  : 
+r_flashlightladderdist                   : 40.0     : , "cheat", "cl"  : 
+r_flashlightlinear                       : 100.0    : , "cheat", "cl"  : 
+r_flashlightlockposition                 : 0        : , "cheat", "cl"  : 
+r_flashlightmuzzleflashfov               : 120      : , "cheat", "cl"  : 
+r_flashlightnear                         : 4.0      : , "cheat", "cl"  : 
+r_flashlightnearoffsetscale              : 0.3      : , "cheat", "cl"  : 
+r_flashlightoffsetforward                : 0.0      : , "cheat", "cl"  : 
+r_flashlightoffsetforward_low            : 0.0      : , "cheat", "cl"  : 
+r_flashlightoffsetright                  : 5.0      : , "cheat", "cl"  : 
+r_flashlightoffsetright_low              : 10.0     : , "cheat", "cl"  : 
+r_flashlightoffsetup                     : -5.0     : , "cheat", "cl"  : 
+r_flashlightoffsetup_low                 : -16.0    : , "cheat", "cl"  : 
+r_flashlightquadratic                    : 0.0      : , "cheat", "cl"  : 
+r_flashlightshadowatten                  : 0.35     : , "cheat", "cl"  : 
+r_flashlightvisualizetrace               : 0        : , "cheat", "cl"  : 
+r_hwmorph                                : 0        : , "cheat"        : 
+r_itemblinkmax                           : .3       : , "cheat"        : 
+r_itemblinkrate                          : 4.5      : , "cheat"        : 
+r_JeepViewBlendTo                        : 1        : , "cheat", "cl"  : 
+r_JeepViewBlendToScale                   : 0.03     : , "cheat", "cl"  : 
+r_JeepViewBlendToTime                    : 1.5      : , "cheat", "cl"  : 
+r_lightcache_numambientsamples           : 162      : , "cheat"        : number of random directions to fire rays when computing ambient lighting
+r_lightcache_radiusfactor                : 1000     : , "cheat"        : Allow lights to influence lightcaches beyond the lights' radii
+r_lightcachecenter                       : 1        : , "cheat"        : 
+r_lightcachemodel                        : -1       : , "cheat"        : 
+r_lightinterp                            : 5        : , "cheat"        : Controls the speed of light interpolation, 0 turns off interpolation
+r_lightmap                               : -1       : , "cheat"        : 
+r_lightstyle                             : -1       : , "cheat"        : 
+r_lightwarpidentity                      : 0        : , "cheat"        : 
+r_lockpvs                                : 0        : , "cheat"        : Lock the PVS so you can fly around and inspect what is being drawn.
+r_mapextents                             : 16384    : , "cheat", "cl"  : Set the max dimension for the map.  This determines the far clipping plane
+r_modelwireframedecal                    : 0        : , "cheat"        : 
+r_nohw                                   : 0        : , "cheat"        : 
+r_nosw                                   : 0        : , "cheat"        : 
+r_novis                                  : 0        : , "cheat"        : Turn off the PVS.
+r_occlusionspew                          : 0        : , "cheat"        : Activate/deactivates spew about what the occlusion system is doing.
+r_oldlightselection                      : 0        : , "cheat"        : Set this to revert to HL2's method of selecting lights
+r_partition_level                        : -1       : , "cheat"        : Displays a particular level of the spatial partition system. Use -1 to disable it.
+r_portalsopenall                         : 0        : , "cheat"        : Open all portals
+r_PortalTestEnts                         : 1        : , "cheat", "cl"  : Clip entities against portal frustums.
+r_proplightingpooling                    : -1.0     : , "cheat"        : 0 - off, 1 - static prop color meshes are allocated from a single shared vertex buffer (on hardware that supports stream offset)
+r_radiosity                              : 4        : , "cheat"        : 0: no radiosity 1: radiosity with ambient cube (6 samples) 2: radiosity with 162 samples 3: 162 samples for static props, 6 samples for everything else
+r_rainalpha                              : 0.4      : , "cheat", "cl"  : 
+r_rainalphapow                           : 0.8      : , "cheat", "cl"  : 
+r_RainCheck                              : 0        : , "cheat", "cl"  : Enable/disable IsInAir() check for rain drops?
+r_RainDebugDuration                      : 0        : , "cheat", "cl"  : Shows rain tracelines for this many seconds (0 disables)
+r_raindensity                            : 0.001    : , "cheat", "cl"  : 
+r_RainHack                               : 0        : , "cheat", "cl"  : 
+r_rainlength                             : 0.1f     : , "cheat", "cl"  : 
+r_RainProfile                            : 0        : , "cheat", "cl"  : Enable/disable rain profiling.
+r_RainRadius                             : 1500     : , "cheat", "cl"  : 
+r_RainSideVel                            : 10       : , "cheat", "cl"  : How much sideways velocity rain gets.
+r_RainSimulate                           : 1        : , "cheat", "cl"  : Enable/disable rain simulation.
+r_rainspeed                              : 600.0f   : , "cheat", "cl"  : 
+r_RainSplashPercentage                   : 20       : , "cheat", "cl"  : 
+r_rainwidth                              : 0.5      : , "cheat", "cl"  : 
+r_randomflex                             : 0        : , "cheat"        : 
+r_shadow_debug_spew                      : 0        : , "cheat", "cl"  : 
+r_shadow_deferred                        : 0        : , "cheat"        : Toggle deferred shadow rendering
+r_shadowfromanyworldlight                : 0        : , "cheat", "cl"  : 
+r_shadowfromworldlights_debug            : 0        : , "cheat", "cl"  : 
+r_shadowids                              : 0        : , "cheat"        : 
+r_shadows_gamecontrol                    : -1       : , "cheat"        : 
+r_shadowwireframe                        : 0        : , "cheat"        : 
+r_showenvcubemap                         : 0        : , "cheat"        : 
+r_showz_power                            : 1.0f     : , "cheat"        : 
+r_skin                                   : 0        : , "cheat"        : 
+r_skybox                                 : 1        : , "cheat", "cl"  : Enable the rendering of sky boxes
+r_slowpathwireframe                      : 0        : , "cheat"        : 
+r_SnowColorBlue                          : 200      : , "cheat", "cl"  : Snow.
+r_SnowColorGreen                         : 175      : , "cheat", "cl"  : Snow.
+r_SnowColorRed                           : 150      : , "cheat", "cl"  : Snow.
+r_SnowDebugBox                           : 0        : , "cheat", "cl"  : Snow Debug Boxes.
+r_SnowEnable                             : 1        : , "cheat", "cl"  : Snow Enable
+r_SnowEndAlpha                           : 255      : , "cheat", "cl"  : Snow.
+r_SnowEndSize                            : 0        : , "cheat", "cl"  : Snow.
+r_SnowFallSpeed                          : 1.5      : , "cheat", "cl"  : Snow fall speed scale.
+r_SnowInsideRadius                       : 256      : , "cheat", "cl"  : Snow.
+r_SnowOutsideRadius                      : 1024     : , "cheat", "cl"  : Snow.
+r_SnowParticles                          : 500      : , "cheat", "cl"  : Snow.
+r_SnowPosScale                           : 1        : , "cheat", "cl"  : Snow.
+r_SnowRayEnable                          : 1        : , "cheat", "cl"  : Snow.
+r_SnowRayLength                          : 8192.0f  : , "cheat", "cl"  : Snow.
+r_SnowRayRadius                          : 256      : , "cheat", "cl"  : Snow.
+r_SnowSpeedScale                         : 1        : , "cheat", "cl"  : Snow.
+r_SnowStartAlpha                         : 25       : , "cheat", "cl"  : Snow.
+r_SnowStartSize                          : 1        : , "cheat", "cl"  : Snow.
+r_SnowWindScale                          : 0.0035   : , "cheat", "cl"  : Snow.
+r_SnowZoomOffset                         : 384.0f   : , "cheat", "cl"  : Snow.
+r_SnowZoomRadius                         : 512.0f   : , "cheat", "cl"  : Snow.
+r_swingflashlight                        : 1        : , "cheat", "cl"  : 
+r_updaterefracttexture                   : 1        : , "cheat", "cl"  : 
+r_VehicleViewClamp                       : 1        : , "cheat", "cl"  : 
+r_visocclusion                           : 0        : , "cheat"        : Activate/deactivate wireframe rendering of what the occlusion system is doing.
+r_visualizelighttraces                   : 0        : , "cheat"        : 
+r_visualizelighttracesshowfulltrace      : 0        : , "cheat"        : 
+r_visualizetraces                        : 0        : , "cheat"        : 
+ragdoll_velocity_multiplier              : 0        : , "cheat", "cl"  : Acceleration to last living velocity given to new ragdolls
+report_cliententitysim                   : 0        : , "cheat", "cl"  : List all clientside simulations and time - will report and turn itself off.
+report_clientthinklist                   : 0        : , "cheat", "cl"  : List all clientside entities thinking and time - will report and turn itself off.
+rope_min_pixel_diameter                  : 2.0      : , "cheat"        : 
+showbudget_texture                       : 0        : , "cheat"        : Enable the texture budget panel.
+singlestep                               : 0        : , "cheat"        : Run engine in single step mode ( set next to 1 to advance a frame )
+snd_filter                               :          : , "cheat"        : 
+snd_foliage_db_loss                      : 4        : , "cheat"        : foliage dB loss per 1200 units
+snd_gain                                 : 1        : , "cheat"        : 
+snd_gain_max                             : 1        : , "cheat"        : 
+snd_gain_min                             : 0.01     : , "cheat"        : 
+snd_obscured_gain_dB                     : -2.70    : , "cheat"        : 
+snd_pre_gain_dist_falloff                : 1        : , "cheat"        : 
+snd_refdb                                : 60       : , "cheat"        : Reference dB at snd_refdist
+snd_refdist                              : 36       : , "cheat"        : Reference distance for snd_refdb
+snd_showstart                            : 0        : , "cheat"        : 
+snd_visualize                            : 0        : , "cheat"        : Show sounds location in world
+soundscape_fadetime                      : 1.0      : , "cheat", "cl"  : Time to crossfade sound effects between soundscapes
+spec_freeze_distance_max                 : 200      : , "cheat", "cl"  : Maximum random distance from the target to stop when framing them in observer freeze cam.
+spec_freeze_distance_min                 : 96       : , "cheat", "cl"  : Minimum random distance from the target to stop when framing them in observer freeze cam.
+spec_keep_team_cc                        : 1        : , "cheat", "cl"  : Use team color correction even when spectating in vs mode
+spec_keep_team_glows                     : 1        : , "cheat", "cl"  : Use team glows even when spectating in vs mode
+ss_debug_draw_player                     : -1       : , "cheat", "cl", "launcher" : 
+ss_mimic                                 : 0        : , "cheat", "cl", "launcher" : Split screen users mimic base player's CUserCmds
+survivor_autolook_voc_delay              : 1        : , "cheat", "cl"  : After staring an object for this many seconds, a survivor will say a smartlook concept for it if available.
+survivor_min_local_yaw                   : -45      : , "cheat", "cl"  : 
+survivor_use_glow_range                  : 500      : , "cheat", "cl"  : 
+sv_creationtickcheck                     : 1        : , "cheat", "launcher" : Do extended check for encoding of timestamps against tickcount
+sv_dumpstringtables                      : 0        : , "cheat"        : 
+sv_memlimit                              : 0        : , "cheat"        : If set, whenever a game ends, if the total memory used by the server is greater than this # of megabytes, the server will exit.
+tir_maxpitch                             : 15       : , "cheat", "cl"  : TrackIR Max Pitch
+tir_maxroll                              : 90       : , "cheat", "cl"  : TrackIR Max Roll
+tir_maxx                                 : 4        : , "cheat", "cl"  : TrackIR Max X
+tir_maxy                                 : 6        : , "cheat", "cl"  : TrackIR Max Y
+tir_maxyaw                               : 90       : , "cheat", "cl"  : TrackIR Max Yaw
+tir_maxz                                 : 1        : , "cheat", "cl"  : TrackIR Max Z
+ui_posedebug_fade_in_time                : 0.2      : , "cheat", "norecord", "cl" : Time during which a new pose activity layer is shown in green in +posedebug UI
+ui_posedebug_fade_out_time               : 0.8      : , "cheat", "norecord", "cl" : Time to keep a no longer active pose activity layer in red until removing it from +posedebug UI
+vcollide_wireframe                       : 0        : , "cheat", "cl"  : Render physics collision models in wireframe
+vgui_drawtree                            : 0        : , "cheat"        : Draws the vgui panel hiearchy to the specified depth level.
+viewmodel_fov                            : 50       : , "cheat", "cl"  : 
+vm_debug                                 : 0        : , "cheat", "cl"  : 
+z_added_light_debug                      : 0        : , "cheat", "cl"  : 
+z_boomer_gibs                            : 0        : , "cheat", "cl"  : 
+z_camo_decay_rate                        : 0.001    : , "cheat", "cl"  : How fast the camouflage effect dies on ragdolls
+z_escape_route_alpha                     : 25       : , "cheat", "cl"  : 
+z_escape_route_force_visible             : 0        : , "cheat", "cl"  : 
+z_frustration_blink_percent              : 0.75     : , "cheat", "cl"  : 
+z_frustration_blink_rate                 : 10       : , "cheat", "cl"  : 
+z_max_blood_scale                        : 3        : , "cheat", "cl"  : The biggest starting scale a blood puff can be.
+z_view_distance                          : 0        : , "cheat", "cl"  : Default camera distance when in-eye (non-zero is pulled back like staggering, hanging, etc)
+z_vomit_target_dot                       : 0.6      : , "cheat", "cl"  : 
+z_vomit_target_range                     : 280      : , "cheat", "cl"  : 
